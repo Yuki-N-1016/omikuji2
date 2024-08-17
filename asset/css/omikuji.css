@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: darkgray;
+  background-size: 80%, auto;
+}
+.cont {
+  margin-left: 200px;
+}
+
+.textbox {
+  margin-top: 100px;
+  margin-left: 90px;
+  font-size: 30px;
+  font-family: 'MyricaM'
+}
+.btn {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+  background-color: #333;
+  border-color: #ccc;
+  width: 100px;
+  top: 80px;
+}
+.kujititle {
+  margin-left: 100px;
+  padding-top: 20px;
+}
+.omikuji {
+  display: flex;
+  padding-left: 0;
+  padding-top: 20px;
+  margin-left: 100px;
+  text-align: center;
+}
+#dog {
+  margin-left: 20px;
+}
+#cat {
+  margin-left: 20px;
+}
+#tanuki {
+  margin-left: 20px;
+}
+
+/*  メディアクエリ */
+/* 横幅が768pxになった時点で適用する */
+@media screen and (max-width: 768px){
+  .kujititle {
+    flex-direction: column;
+  }}
+  body {
+    margin: 0;
+    padding: 0;
+    size: 50%;
+  }
+  .btn {
+    flex-direction: column;
+    justify-content: center;
+  }
